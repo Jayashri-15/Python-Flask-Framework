@@ -1,0 +1,36 @@
+<html>
+    <head>
+		<title>Todo|Mark Sheet</title>
+	</head>
+		 
+		 
+	<body>
+            	
+		<h1>Mark Sheet</h1>
+		<a href="/create">Click here to add students</a>
+		<table border='1' align='center'>
+            
+			<tr>
+				<th>Roll_No</th>
+				<th>Name</th>
+				<th>Subject</th>
+                        <th>Mark</th>
+                        <th>Status</th>
+				<th>Edit</th>
+				<th>Delete</th>
+			</tr>
+			{% for x in d %}
+				<tr>
+					 <td>{{x.1}}</td>
+					 <td>{{x.2}}</td>
+					 <td>{{x.3}}</td>
+                               <td>{{x.4}}</td>
+                               <td>{{x.5}}</td>
+					 <td><a href="edit/{{x.0}}">Edit</a></td>
+					 <td><a href="delete/{{x.0}}">Delete</a></td>
+				</tr>
+			 {% endfor %}
+		</table>
+	</body>
+
+</html>

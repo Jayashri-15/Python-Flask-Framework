@@ -1,0 +1,43 @@
+<html>
+         <head>
+		<title>Todo|Update Task</title>
+	</head>
+		 
+		 
+	<body>
+            				  							 
+		<h1>Update Task</h1>
+		<form method='POST' action='/update/{{d.0}}'>
+			<table>
+				
+				<tr>
+					<td>Roll_No:</td>
+					<td><input type="int" name="roll" value="{{d.1}}"/></td>
+				 </tr>
+				 </tr>
+					<td>Name:</td>
+					<td><input type="text" name="na" value="{{d.2}}"/></td>
+				 </tr>
+				 </tr>
+					<td>Subject:</td>
+					<td><input type="text" name="sub" value="{{d.3}}"/></td>
+				 </tr>
+                         </tr>
+					<td>Mark:</td>
+					<td><input type="int" name="mark" value="{{d.4}}"/></td>
+				 </tr>
+                         </tr>
+					<td>Status:</td>
+					<td><input type="text" name="sts" value="{{d.5}}"/></td>
+				 </tr>
+				 </tr>
+					<td><input type="submit" name="send"/></td>			  
+				 </tr>
+				 				  
+								  
+			 </table>    
+						 
+		</form>
+	</body>
+
+</html>
